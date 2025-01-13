@@ -9,3 +9,13 @@ A demo version of the [MimasA7-SLI](https://github.com/Qishi-Hu/MimasA7-SLI) pro
   - Increments the frame index at every VSYNC (normal speed).
   - Increments the frame index every 32 VSYNC (1/32x speed).
 - **Mode Selection**: Toggle between modes using two pushbuttons.
+
+## Directory Structure
+<pre>
+├── README.md           # Overview of the repository  
+├── Rev3_SD_HDMI_1.0.xpr    # Archive of the Vivado 2024.1 project  
+├── Bitsrteam/          # Final bitstream files  
+├── src_1/              # Source HDLand Matlab code  
+├── sim_1/              # Test benches for simulation  
+└── constr_1/           #  Xlinx Design Constarint  
+</pre>
