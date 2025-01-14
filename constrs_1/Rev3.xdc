@@ -117,22 +117,22 @@ set_property -dict { PACKAGE_PIN "G1"    IOSTANDARD TMDS_33  }  [get_ports { hdm
 ####################################################################################################################
 #                                          P12 Header    (Camera 1)                                                  #
 ####################################################################################################################
-# A32 or GPIO_20_P    reserved  
-set_property -dict  { PACKAGE_PIN "H13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C1_out[1]}];                   # IO_L1P_T0_AD0P_15             Sch = GPIO_20_P
-# A31 or GPIO_19_P   for trigger output
+# A32 or GPIO_20_P    rdy
+set_property -dict  { PACKAGE_PIN "H13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C1_in[0]}];                   # IO_L1P_T0_AD0P_15             Sch = GPIO_20_P
+# A31 or GPIO_19_P   trigger
 set_property -dict  { PACKAGE_PIN "J14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C1_out[0]}];                     # IO_L3P_T0_DQS_AD1P_15         Sch = GPIO_19_P
-# A29 or GPIO_18_P  reserved 
-set_property -dict  { PACKAGE_PIN "M13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C1_in[1]}];                      # IO_L20P_T3_A20_15             Sch = GPIO_18_P
-# A28 or GPIO_17_P  reserved 
-set_property -dict  { PACKAGE_PIN "K13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C1_in[0]}];                      # IO_L19P_T3_A22_15             Sch = GPIO_17_P
+# A29 or GPIO_18_P  first frame
+set_property -dict  { PACKAGE_PIN "M13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C1_out[1]}];                      # IO_L20P_T3_A20_15             Sch = GPIO_18_P
+# A28 or GPIO_17_P  hdmi switch
+set_property -dict  { PACKAGE_PIN "K13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C1_in[1]}];                      # IO_L19P_T3_A22_15             Sch = GPIO_17_P
 ####################################################################################################################
 #                                          P13 Header    (Camera 2)                                                  #
 ####################################################################################################################
 # A32 or GPIO_40_P    reserved 
-set_property -dict  { PACKAGE_PIN "F16"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C2_out[1]}];                      # IO_L2P_T0_16                  Sch = GPIO_40_P
+set_property -dict  { PACKAGE_PIN "F16"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C2_in[0]}];                      # IO_L2P_T0_16                  Sch = GPIO_40_P
 # A31 or GPIO_39_P    reserved 
 set_property -dict  { PACKAGE_PIN "F13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C2_out[0]}];                      # IO_L1P_T0_16                  Sch = GPIO_39_P
 # A29 or GPIO_38_P    reserved  
-set_property -dict  { PACKAGE_PIN "E13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C2_in[1]}];                      # IO_L4P_T0_16                  Sch = GPIO_38_P  
+set_property -dict  { PACKAGE_PIN "E13"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C2_out[1]}];                      # IO_L4P_T0_16                  Sch = GPIO_38_P  
 # A28 or GPIO_37_P    reserved 
-set_property -dict  { PACKAGE_PIN "D14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C2_in[0]}];                      # IO_L6P_T0_16                  Sch = GPIO_37_P
+set_property -dict  { PACKAGE_PIN "D14"   IOSTANDARD LVCMOS33   SLEW FAST } [get_ports {C2_in[1]}];                      # IO_L6P_T0_16                  Sch = GPIO_37_P
