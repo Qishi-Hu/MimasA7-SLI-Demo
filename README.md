@@ -14,6 +14,7 @@ A demo version of the [MimasA7-SLI](https://github.com/Qishi-Hu/MimasA7-SLI) pro
 <pre>
 ├── README.md           # Overview of the repository  
 ├── Rev3_SD_HDMI_1.0.xpr    # Archive of the Vivado 2024.1 project  
+├── Matlab/             # .m scripts and output files
 ├── Bitsrteam/          # Final bitstream files  
 ├── src_1/              # Source HDLand Matlab code  
 ├── sim_1/              # Test benches for simulation  
